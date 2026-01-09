@@ -1,0 +1,60 @@
+@font-face{
+    font-family: 'ResonancePolice';
+    src: url('../police/Aileron-Black.otf') format('opentype'),
+    url('../police/Aileron-Light.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'ResonancePoliceLight';
+    src: url('../police/Aileron-Light.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+  font-family: 'ResonancePolice';
+  max-width: 600px;
+  margin: 40px auto;
+  background: url(../images/fond.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  min-height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'ResonancePoliceLight';
+}
+
+textarea {
+  height: 80px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  font-family: 'ResonancePoliceLight';
+}
+
+button {
+    font-family: 'ResonancePoliceLight';
+}
+
+h1,
+h2 {
+    color: #c72a09;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'ResonancePoliceLight';
+}
