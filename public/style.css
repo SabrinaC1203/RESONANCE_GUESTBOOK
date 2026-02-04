@@ -12,8 +12,11 @@
     font-display: swap;
 }
 
+body, input, textarea, button, select, option, li{
+  font-family: 'ResonancePolice', 'Aileron', sans-serif;
+}
+
 body {
-  font-family: 'ResonancePolice';
   margin: 0;
   background: url(./images/fond.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -30,6 +33,22 @@ form {
   font-family: 'ResonancePoliceLight';
 }
 
+form input,
+form textarea {
+  background-color: rgb(188, 142, 120, 0.8);  /* fond semi-transparent noir */
+  color: white;                          /* texte en blanc */
+  border: 1px solid white;               /* bordure blanche */
+  padding: 8px;
+  border-radius: 5px;
+  font-family: 'ResonancePoliceLight';
+}
+
+/* Placeholder en gris clair */
+form input::placeholder,
+form textarea::placeholder {
+  color: #ddd; /* couleur des placeholders */
+}
+
 textarea {
   height: 80px;
 }
@@ -37,6 +56,16 @@ textarea {
 button {
   padding: 10px;
   cursor: pointer;
+  background-color: rgb(188, 142, 120, 0.8);  /* fond semi-transparent noir */
+  color: white;  
+  font-family: 'ResonancePoliceLight';
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+button:hover {
+  font: bold;
+  background-color: rgb(210, 142, 120);
 }
 
 li {
@@ -46,13 +75,14 @@ li {
   font-family: 'ResonancePoliceLight';
 }
 
-button {
-    font-family: 'ResonancePoliceLight';
-}
-
 h1,
 h2 {
-    color: #c72a09;
+  font-family: 'ResonancePolice';
+  color: #ffffff;
+}
+
+form, #messages li, #messages li .message {
+  font-family: 'ResonancePoliceLight';
 }
 
 input::placeholder,
