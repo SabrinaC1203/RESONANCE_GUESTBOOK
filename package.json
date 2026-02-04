@@ -12,5 +12,14 @@
   "description": "",
   "dependencies": {
     "express": "^5.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SabrinaC1203/RESONANCE_GUESTBOOK.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SabrinaC1203/RESONANCE_GUESTBOOK/issues"
+  },
+  "homepage": "https://github.com/SabrinaC1203/RESONANCE_GUESTBOOK#readme"
 }
