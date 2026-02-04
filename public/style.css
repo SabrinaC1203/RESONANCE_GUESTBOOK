@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 @font-face{
     font-family: 'ResonancePolice';
     src: url('../police/Aileron-Black.otf') format('opentype'),
@@ -24,6 +30,14 @@ body {
   display: flex;
   justify-content:center;
   align-items: flex-start;
+}
+
+.page-center,
+#messages {
+    width: 600px;      /* largeur pour ordinateur */
+    max-width: 90%;    /* largeur responsive */
+    margin: 0;
+    padding: 20px;
 }
 
 form {
@@ -90,11 +104,6 @@ textarea::placeholder {
     font-family: 'ResonancePoliceLight';
 }
 
-.page-center {
-  width: 600px;
-  max-width: 90%;
-}
-
 #messages {
   width: 600px;
   max-width: 90%;   /* optionnel si responsive */
@@ -138,4 +147,28 @@ textarea::placeholder {
   font-size: 0.8em;
   color: #ddd;
   text-align: right;
+}
+
+@media (max-width: 480px) {
+  .page-center,
+  #messages {
+    width: 100% !important;     /* pleine largeur */
+    max-width: 100% !important; /* override 600px desktop */
+    margin: 0;
+    padding-left: 5px;          /* petit padding gauche */
+    padding-right: 5px;         /* petit padding droite */
+  }
+
+  form {
+    padding: 8px;   /* petit padding interne du formulaire */
+    gap: 6px;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    width: 100% !important;     /* pleine largeur */
+    padding: 12px;
+    font-size: 16px;
+  }
 }
