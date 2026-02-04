@@ -22,17 +22,9 @@ async function loadMessages() {
       <div class="header">
         <span class="name">${msg.name}</span>
         <span class="date">${formattedDate}</span>
-        <button class="delete-btn">🗑</button>
       </div>
       <span class="message">${msg.message}</span>
     `;
-
-    // Ajouter l'événement pour supprimer
-    li.querySelector(".delete-btn").addEventListener("click", async () => {
-      await fetch(`/messages/${msg.id}`, { method: "DELETE" });
-      loadMessages();
-    });
-
     messagesList.appendChild(li);
   });
 }

@@ -137,16 +137,5 @@ textarea::placeholder {
 #messages li .date {
   font-size: 0.8em;
   color: #ddd;
-}
-
-.delete-btn {
-  color: white;          /* rend l’emoji blanc */
-  background: transparent; /* fond transparent */
-  border: solid white 0.2px;
-  border-radius: 5px;
-  transition: transform 0.2s;
-}
-
-.delete-btn:hover {
-  transform: scale(1.2);
+  text-align: right;
 }
